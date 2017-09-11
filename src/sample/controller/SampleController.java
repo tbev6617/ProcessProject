@@ -18,8 +18,12 @@ public class SampleController
 		PlayDohSquare smallSquare = new PlayDohSquare();
 		PlayDohSquare bigSquare = new PlayDohSquare(10);
 		
-		System.out.println("Here is my play doh circle");
-		System.out.println(firstCircle.toString());
+		System.out.print("Here is my play doh circle. ");
+		System.out.println(firstCircle);
+		System.out.println("This is my second circle. " + secondCircle);
+		System.out.println("This is my third circle. " + thirdCircle);
+		System.out.println("This is my small square. " + smallSquare);
+		System.out.println("This is my big square. " + bigSquare);
 		testScanner();
 	}
 	

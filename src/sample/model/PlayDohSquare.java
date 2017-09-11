@@ -11,4 +11,8 @@ public class PlayDohSquare
 	{
 		this.sideLength = sideLength;
 	}
+	public String toString() {
+		String description = "I am a square and my side length is " + sideLength;
+		return description;
+	}
 }
