@@ -5,10 +5,6 @@ import sample.model.PlayDohSquare;
 
 public class SampleController 
 {
-	public SampleController() 
-	{
-		
-	}
 	public void start()
 	{
 		PlayDohCircle firstCircle = new PlayDohCircle();
@@ -33,6 +29,11 @@ public class SampleController
 		Scanner input = new Scanner(System.in);
 		System.out.println("What is your favorite food?");
 		String answer = input.nextLine();
-		System.out.println("Oh, you like to eat " + answer + "!");
+		System.out.println("Oh, you like to eat " + answer + "!\n");
+		
+		System.out.println("How big do you want your square's sides to be?");
+		PlayDohSquare userSquare = new PlayDohSquare(input.nextInt());
+		System.out.println("Here is your square. " + userSquare);
+		//testScanner();
 	}
 }
