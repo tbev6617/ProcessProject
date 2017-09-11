@@ -1,6 +1,7 @@
 package sample.controller;
 import java.util.Scanner;
 import sample.model.PlayDohCircle;
+import sample.model.PlayDohSquare;
 
 public class SampleController 
 {
@@ -12,9 +13,13 @@ public class SampleController
 	{
 		PlayDohCircle firstCircle = new PlayDohCircle();
 		PlayDohCircle secondCircle = new PlayDohCircle();
-		PlayDohCircle thirdCircle = new PlayDohCircle();
-		System.out.println("This is a sample project to show the github");
-		System.out.println("and eclipse process and develop muscle memory");
+		PlayDohCircle thirdCircle = new PlayDohCircle(10);
+		
+		PlayDohSquare smallSquare = new PlayDohSquare();
+		PlayDohSquare bigSquare = new PlayDohSquare(10);
+		
+		System.out.println("Here is my play doh circle");
+		System.out.println(firstCircle.toString());
 		testScanner();
 	}
 	
