@@ -19,4 +19,8 @@ public class PlayDohCircle
 		String description = "I am a circle and my size is " + size;
 		return description;
 	}
+	public void setSize(int updateSize) 
+	{
+		size = updateSize;
+	}
 }

@@ -27,13 +27,15 @@ public class SampleController
 	{
 		//Declares and substantiates scanner object
 		Scanner input = new Scanner(System.in);
+		
+		/*
 		System.out.println("What is your favorite food?");
 		String answer = input.nextLine();
 		System.out.println("Oh, you like to eat " + answer + "!\n");
+		*/
 		
-		System.out.println("How big do you want your square's sides to be?");
-		PlayDohSquare userSquare = new PlayDohSquare(input.nextInt());
-		System.out.println("Here is your square. " + userSquare);
-		//testScanner();
+		System.out.println("How big do you want your circle's sides to be?");
+		PlayDohCircle userSquare = new PlayDohCircle(input.nextInt());
+		System.out.println("Here is your circle: " + userSquare);
 	}
 }
