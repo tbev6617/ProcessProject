@@ -28,14 +28,15 @@ public class SampleController
 		//Declares and substantiates scanner object
 		Scanner input = new Scanner(System.in);
 		
-		/*
+		/* I commented out the food question
 		System.out.println("What is your favorite food?");
 		String answer = input.nextLine();
 		System.out.println("Oh, you like to eat " + answer + "!\n");
 		*/
-		
-		System.out.println("How big do you want your circle's sides to be?");
-		PlayDohCircle userSquare = new PlayDohCircle(input.nextInt());
-		System.out.println("Here is your circle: " + userSquare);
+		PlayDohCircle userCircle = new PlayDohCircle();
+		System.out.println("Here is your circle before I change it: " + userCircle);
+		System.out.println("How big do you want your circle's size to be? Use numbers please.");
+		userCircle.setSize(input.nextInt());
+		System.out.println("Here is your new circle: " + userCircle);
 	}
 }
